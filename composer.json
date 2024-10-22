@@ -9,6 +9,7 @@
       "email": "alagesan@flycart.org"
     }
   ],
+
   "require": {
     "vlucas/valitron": "^1.4"
   },
