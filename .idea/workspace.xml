@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI.">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/src/assets/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/src/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-ui/vite.config.js" afterDir="false" />
+    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality.">
+      <change afterPath="$PROJECT_DIR$/wployalty_point_email_remainder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +92,7 @@
       <workItem from="1729577474435" duration="1375000" />
       <workItem from="1729578866093" duration="451000" />
       <workItem from="1729579330098" duration="4696000" />
-      <workItem from="1729587238202" duration="1195000" />
+      <workItem from="1729587238202" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add composer.json and .gitignore&#10;&#10;Add a composer.json file with basic project dependencies and a .gitignore file to exclude common files from version control.">
       <option name="closed" value="true" />
@@ -179,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729587494383</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality.">
+      <option name="closed" value="true" />
+      <created>1729588699930</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729588699930</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +188,7 @@
     <MESSAGE value="No file selected" />
     <MESSAGE value="Generating..." />
     <MESSAGE value="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI." />
+    <MESSAGE value="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality." />
   </component>
 </project>
