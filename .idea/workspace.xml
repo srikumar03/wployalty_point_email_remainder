@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI.">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/src/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/src/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-ui/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;srikumar03&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/srikumar03/wployalty_point_email_remainder.git&quot;,
+    &quot;accountId&quot;: &quot;65be72a6-98f3-47cb-a10d-d952dbc57823&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/valitron" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nmTuOOXI0RIzHGVZDWSazxNIMu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sri/Local Sites/dummysite/app/public/wp-content/plugins/wployalty_point_email_remainder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;aigit.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="" />
+      <created>1729577473382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729577473382</updated>
+      <workItem from="1729577474435" duration="1375000" />
+      <workItem from="1729578866093" duration="451000" />
+      <workItem from="1729579330098" duration="4696000" />
+      <workItem from="1729587238202" duration="1195000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: Add composer.json and .gitignore&#10;&#10;Add a composer.json file with basic project dependencies and a .gitignore file to exclude common files from version control.">
+      <option name="closed" value="true" />
+      <created>1729585899868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729585899868</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1729586035182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729586035182</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial commit 1">
+      <option name="closed" value="true" />
+      <created>1729586211035</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729586211035</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix(composer): Update namespace in composer.json&#10;&#10;Updates the namespace in composer.json from &quot;Wser\\&quot; to &quot;wlper\\&quot;.">
+      <option name="closed" value="true" />
+      <created>1729586311842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729586311842</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix(composer): Update namespace in composer.json&#10;&#10;Updates the namespace in composer.json from &quot;Wser\\&quot; to &quot;wlper\\&quot;.">
+      <option name="closed" value="true" />
+      <created>1729586469149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729586469149</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix(composer): Update namespace in composer.json&#10;&#10;Updates the namespace in composer.json from &quot;Wser\\&quot; to &quot;wlper\\&quot;.">
+      <option name="closed" value="true" />
+      <created>1729586665162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729586665162</updated>
+    </task>
+    <task id="LOCAL-00007" summary="No file selected">
+      <option name="closed" value="true" />
+      <created>1729587306757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729587306757</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: Add valitron dependency&#10;&#10;Adds the `vlucas/valitron` dependency to the `composer.json` file for validation purposes.">
+      <option name="closed" value="true" />
+      <created>1729587343897</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729587343897</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI.">
+      <option name="closed" value="true" />
+      <created>1729587494383</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729587494383</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Add composer.json and .gitignore&#10;&#10;Add a composer.json file with basic project dependencies and a .gitignore file to exclude common files from version control." />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="initial commit 1" />
+    <MESSAGE value="fix(composer): Update namespace in composer.json&#10;&#10;Updates the namespace in composer.json from &quot;Wser\\&quot; to &quot;wlper\\&quot;." />
+    <MESSAGE value="No file selected" />
+    <MESSAGE value="Generating..." />
+    <MESSAGE value="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI." />
+  </component>
+</project>
