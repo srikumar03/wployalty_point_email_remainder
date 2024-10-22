@@ -1,0 +1,21 @@
+{
+  "name": "woocommerce/wc-susbcription-email-reminder",
+  "description": "Subscription Email Reminder",
+  "type": "project",
+  "license": "GPL2 or Later",
+  "authors": [
+    {
+      "name": "Alagesan S",
+      "email": "alagesan@flycart.org"
+    }
+  ],
+  "require": {
+    "vlucas/valitron": "^1.4"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Wser\\": ""
+    }
+  }
+}
