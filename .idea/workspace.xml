@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality.">
-      <change afterPath="$PROJECT_DIR$/wployalty_point_email_remainder.php" afterDir="false" />
+    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +28,12 @@
     &quot;assignee&quot;: &quot;srikumar03&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/srikumar03/wployalty_point_email_remainder.git&quot;,
-    &quot;accountId&quot;: &quot;65be72a6-98f3-47cb-a10d-d952dbc57823&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:srikumar03/wployalty_point_email_remainder.git",
+    "accountId": "65be72a6-98f3-47cb-a10d-d952dbc57823"
   }
-}</component>
+}]]></component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -72,6 +71,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin-ui" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -93,6 +96,10 @@
       <workItem from="1729578866093" duration="451000" />
       <workItem from="1729579330098" duration="4696000" />
       <workItem from="1729587238202" duration="2418000" />
+      <workItem from="1729685652766" duration="526000" />
+      <workItem from="1729744621157" duration="3207000" />
+      <workItem from="1732165304500" duration="2990000" />
+      <workItem from="1732176580757" duration="89000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add composer.json and .gitignore&#10;&#10;Add a composer.json file with basic project dependencies and a .gitignore file to exclude common files from version control.">
       <option name="closed" value="true" />
@@ -174,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729588699930</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements.">
+      <option name="closed" value="true" />
+      <created>1732167215629</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732167215629</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +204,7 @@
     <MESSAGE value="Generating..." />
     <MESSAGE value="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI." />
     <MESSAGE value="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality." />
+    <MESSAGE value="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements." />
   </component>
 </project>

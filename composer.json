@@ -1,6 +1,6 @@
 {
-  "name": "woocommerce/wc-susbcription-email-reminder",
-  "description": "Subscription Email Reminder",
+  "name": "wployalty/wlr-point-email-reminder",
+  "description": "Wployalty point Email Reminder",
   "type": "project",
   "license": "GPL2 or Later",
   "authors": [
@@ -9,7 +9,6 @@
       "email": "alagesan@flycart.org"
     }
   ],
-
   "require": {
     "vlucas/valitron": "^1.4"
   },
