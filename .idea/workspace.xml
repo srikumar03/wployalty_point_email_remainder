@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements.">
+    <list default="true" id="2da3b7d9-24c4-4a11-83d8-4d941a1eb800" name="Changes" comment="feat: Integrate React admin UI&#10;&#10;Update plugin to use a React-based admin UI.  This improves&#10;the user experience and allows for a more modern and&#10;interactive interface.  Includes updated dependencies and&#10;build process.">
+      <change afterPath="$PROJECT_DIR$/assets/Admin/Css/dist/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Admin/Js/dist/main.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-ui/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-ui/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-ui/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin-ui/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wployalty_point_email_remainder.php" beforeDir="false" afterPath="$PROJECT_DIR$/wployalty_point_email_remainder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,13 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,8 +49,12 @@
     "accountId": "65be72a6-98f3-47cb-a10d-d952dbc57823"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/Admin/Js/dist/main.bundle.js" root0="SKIP_INSPECTION" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
+      <path value="$PROJECT_DIR$/../../.." />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/vlucas/valitron" />
     </include_path>
@@ -52,23 +71,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sri/Local Sites/dummysite/app/public/wp-content/plugins/wployalty_point_email_remainder&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;aigit.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/sri/Local Sites/dummysite/app/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "aigit.settings",
+    "ts.external.directory.path": "/home/sri/Downloads/PhpStorm-2024.2.3/PhpStorm-242.23339.16/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App/view" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +120,7 @@
       <workItem from="1729685652766" duration="526000" />
       <workItem from="1729744621157" duration="3207000" />
       <workItem from="1732165304500" duration="2990000" />
-      <workItem from="1732176580757" duration="89000" />
+      <workItem from="1732176580757" duration="4675000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add composer.json and .gitignore&#10;&#10;Add a composer.json file with basic project dependencies and a .gitignore file to exclude common files from version control.">
       <option name="closed" value="true" />
@@ -189,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732167215629</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements.">
+      <option name="closed" value="true" />
+      <created>1732178530558</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732178530558</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +234,7 @@
     <MESSAGE value="feat: Add hi.php file&#10;&#10;This file will be used for the plugin's admin UI." />
     <MESSAGE value="feat: Add admin-ui with React &amp; Vite&#10;&#10;Sets up a React-based admin-ui using Vite for development and build processes. &#10;Includes basic styling, HMR, ESLint configuration, and a sample count &#10;component to demonstrate functionality." />
     <MESSAGE value="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update dependencies&#10;&#10;Update project dependencies to their latest versions.  This addresses&#10;potential security vulnerabilities and incorporates the latest bug&#10;fixes and improvements." />
+    <MESSAGE value="feat: Integrate React admin UI&#10;&#10;Update plugin to use a React-based admin UI.  This improves&#10;the user experience and allows for a more modern and&#10;interactive interface.  Includes updated dependencies and&#10;build process." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Integrate React admin UI&#10;&#10;Update plugin to use a React-based admin UI.  This improves&#10;the user experience and allows for a more modern and&#10;interactive interface.  Includes updated dependencies and&#10;build process." />
   </component>
 </project>
