@@ -19,9 +19,6 @@ if ( ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 require __DIR__ . '/vendor/autoload.php';
 
-
-use WLPER\App\Router;
-
-add_action('plugins_loaded', function () {
-    Router::init();
-});
+if (class_exists('\Wlper\App\Router')){
+    \Wlper\App\Router::init();
+}
