@@ -6,12 +6,6 @@ use Wlper\App\Models\UserPointsModel;
 
 class AdminController
 {
-    public static function init()
-    {
-        add_action('admin_init', [self::class, 'scheduleEmailReminder']);
-        add_action('admin_init', [self::class, 'clearEmailReminder']);
-        add_action('app_send_points_reminder', [self::class, 'sendPointsReminder']);
-    }
 
     public static function scheduleEmailReminder()
     {

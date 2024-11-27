@@ -6,11 +6,6 @@ use Wlper\App\Models\UserPointsModel;
 
 class AdminPageController
 {
-    public static function init()
-    {
-        add_action('admin_menu', [self::class, 'registerAdminPage']);
-        add_action('admin_post_send_email_to_user', [self::class, 'handleSendEmailRequest']);
-    }
 
     public static function registerAdminPage()
     {
