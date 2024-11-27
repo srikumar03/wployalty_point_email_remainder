@@ -28,16 +28,14 @@ class AdminController
         }
     }
 
-    public static function sendPointsReminder()
+    public static function sendPointsReminder($users)
     {
-        $users = UserPointsModel::getUsersWithPoints();
-
         foreach ($users as $user) {
             $email_content = self::generateEmailContent($user);
             $subject = sprintf(__('Your Points Update - %d Points!', 'wp-loyalty'), $user->points);
             $headers = ['Content-Type: text/html; charset=UTF-8'];
 
-            wp_mail($user->email, $subject, $email_content, $headers);
+            wp_mail($user->user_email, $subject, $email_content, $headers); // Use user_email instead of email
         }
     }
 
