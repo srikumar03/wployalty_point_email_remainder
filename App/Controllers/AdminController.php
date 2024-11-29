@@ -9,9 +9,35 @@ class AdminController
 
     public static function scheduleEmailReminder()
     {
-        if (!wp_next_scheduled('app_send_points_reminder')) {
-            wp_schedule_event(time(), 'monthly', 'app_send_points_reminder');
+        // Clear any existing scheduled events
+        self::clearEmailReminder();
+
+        // Get the interval and custom days from options
+        $interval = get_option('points_reminder_interval', 'monthly');
+        $custom_days = get_option('points_reminder_custom_days', 30);
+
+        // Calculate the schedule time
+        $schedule_time = time();
+        switch ($interval) {
+            case 'bimonthly':
+                $schedule_time = strtotime('+2 months');
+                break;
+            case 'custom':
+                $schedule_time = strtotime('+' . $custom_days . ' days');
+                break;
+            case 'monthly':
+            default:
+                $schedule_time = strtotime('+1 month');
+                break;
         }
+
+        // Schedule the event if not already scheduled
+        if (!wp_next_scheduled('app_send_points_reminder')) {
+            wp_schedule_single_event($schedule_time, 'app_send_points_reminder');
+        }
+
+
+
     }
 
     public static function clearEmailReminder()
@@ -21,6 +47,24 @@ class AdminController
             wp_unschedule_event($timestamp, 'app_send_points_reminder');
         }
     }
+
+// Handle Custom Schedule Interval
+public static function custom_cron_schedules($schedules)
+    {
+        $interval = get_option('points_reminder_interval', 'monthly');
+        $custom_days = get_option('points_reminder_custom_days', 30);
+
+        if ($interval === 'custom') {
+            print_r(json_encode($schedules) . '\n'. $custom_days);
+            $schedules['custom_days_schedule'] = array(
+                'interval' => $custom_days * 24 * 60 * 60, // Convert days to seconds
+                'display'  => __('Custom Days Interval', 'wp-loyalty'),
+            );
+        }
+
+        return $schedules;
+    }
+
 
     public static function sendPointsReminder($users)
     {
