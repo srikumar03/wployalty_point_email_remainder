@@ -14,11 +14,11 @@
  */
 
 
-if ( ! file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
     return;
 }
 require __DIR__ . '/vendor/autoload.php';
 
-if (class_exists('\Wlper\App\Router')){
+if (class_exists('\Wlper\App\Router')) {
     \Wlper\App\Router::init();
 }

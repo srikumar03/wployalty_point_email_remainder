@@ -10,13 +10,13 @@
             <option value="bimonthly" <?php selected($current_interval, 'bimonthly'); ?>><?php esc_html_e('Bimonthly', 'wp-loyalty'); ?></option>
             <option value="custom" <?php selected($current_interval, 'custom'); ?>><?php esc_html_e('Custom Days', 'wp-loyalty'); ?></option>
         </select>
-        <inputz
+        <input
                 type="number"
                 name="custom_days"
                 id="custom_days"
                 placeholder="Enter days (e.g., 15)"
                 value="<?php echo esc_attr($custom_days); ?>"
-            <?php echo ($current_interval !== 'custom' ? 'style="display:none;"' : ''); ?>
+            <?php echo($current_interval !== 'custom' ? 'style="display:none;"' : ''); ?>
         >
         <button type="submit" class="button-primary"><?php esc_html_e('Save', 'wp-loyalty'); ?></button>
     </form>
@@ -58,7 +58,8 @@
                         ?>
                     </td>
                     <td>
-                        <a href="<?php echo esc_url(admin_url('admin-post.php?action=send_email_to_user&id=' . $user->id)); ?>" class="button">
+                        <a href="<?php echo esc_url(admin_url('admin-post.php?action=send_email_to_user&id=' . $user->id)); ?>"
+                           class="button">
                             <?php esc_html_e('Send Email', 'wp-loyalty'); ?>
                         </a>
                     </td>
