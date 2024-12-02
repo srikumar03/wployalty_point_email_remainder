@@ -22,9 +22,15 @@ class AdminPageController
 
     public static function renderAdminPage()
     {
-        $users = UserPointsModel::getUsersWithPoints(); // Fetch users from the wp_wlr_users table
-        include plugin_dir_path(__FILE__) . '/../Views/AdminPage.php';
+        $users = UserPointsModel::getUsersWithPoints();
+        wc_get_template(
+            'Main.php',
+            array('users' => $users),
+            '',
+            WLPER_PLUGIN_PATH . 'App/Views/Admin/'
+        );
     }
+
 
     public static function handleSendEmailRequest()
     {
@@ -58,6 +64,7 @@ class AdminPageController
 
         $interval = isset($_POST['reminder_interval']) ? sanitize_text_field($_POST['reminder_interval']) : 'monthly';
         $custom_days = isset($_POST['custom_days']) ? absint($_POST['custom_days']) : 30;
+
 
         update_option('points_reminder_interval', $interval);
         if ($interval === 'custom') {

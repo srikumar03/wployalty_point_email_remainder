@@ -13,7 +13,8 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-
+defined('ABSPATH') || exit;
+defined('WLPER_PLUGIN_PATH') || define('WLPER_PLUGIN_PATH', plugin_dir_path(__FILE__));
 if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
     return;
 }

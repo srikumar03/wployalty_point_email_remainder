@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap wp-loyalty-container">
     <h1><?php esc_html_e('Loyalty Users', 'wp-loyalty'); ?></h1>
 
     <?php if (isset($_GET['message'])): ?>
@@ -18,63 +18,42 @@
         </div>
     <?php endif; ?>
 
-    <!-- Fetch saved interval, custom days, and next scheduled date with time -->
-    <?php
-    $current_interval = get_option('points_reminder_interval', 'monthly'); // Default to 'monthly'
-    $custom_days = get_option('points_reminder_custom_days', 30); // Default to 30 days for custom interval
-    $next_scheduled_date = get_option('next_email_scheduled_date', ''); // Get next scheduled date
-    $next_scheduled_time = get_option('next_email_scheduled_time', ''); // Get next scheduled time
+    <!-- Display next scheduled email date and time -->
+    <div class="tab-header">
+        <p><strong><?php esc_html_e('Next Scheduled Email:', 'wp-loyalty'); ?></strong>
+            <?php echo esc_html(date('d/M/Y', strtotime($next_scheduled_date)) . ' - ' . date('D', strtotime($next_scheduled_date))); ?>
+        </p>
+        <a href="#"><?php esc_html_e('View Email Logs', 'wp-loyalty'); ?></a>
+    </div>
 
-    // If there's no scheduled date, calculate based on the current interval
-    if (!$next_scheduled_date || !$next_scheduled_time) {
-        switch ($current_interval) {
-            case 'monthly':
-                $next_scheduled_date = date('Y-m-d', strtotime('+1 month'));
-                $next_scheduled_time = '09:00'; // Default time of 9 AM for monthly
-                break;
-            case 'bimonthly':
-                $next_scheduled_date = date('Y-m-d', strtotime('+2 months'));
-                $next_scheduled_time = '09:00'; // Default time of 9 AM for bimonthly
-                break;
-            case 'custom':
-                $next_scheduled_date = date('Y-m-d', strtotime("+$custom_days days"));
-                $next_scheduled_time = '09:00'; // Default time of 9 AM for custom
-                break;
-        }
-    }
-    ?>
-
-
+    <!-- Reminder Interval Form -->
     <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
         <?php wp_nonce_field('save_reminder_interval_nonce'); ?>
         <input type="hidden" name="action" value="save_reminder_interval">
-        <!-- Show the next scheduled event with time -->
-        <p><strong><?php esc_html_e('Next Scheduled Email:', 'wp-loyalty'); ?></strong>
-            <?php echo esc_html(date('d/M/Y', strtotime($next_scheduled_date)) . ' - ' . date('D', strtotime($next_scheduled_date)) . ' at ' . $next_scheduled_time); ?>
-        </p>
 
-        <table class="form-table">
+        <table>
             <tr>
                 <th><?php esc_html_e('Reminder Interval', 'wp-loyalty'); ?></th>
                 <td>
                     <select name="reminder_interval">
-                        <option value="monthly" <?php selected($current_interval, 'monthly'); ?>>
+                        <option value="monthly" <?php selected(get_option('points_reminder_interval', 'monthly'), 'monthly'); ?>>
                             <?php esc_html_e('Monthly', 'wp-loyalty'); ?>
                         </option>
-                        <option value="bimonthly" <?php selected($current_interval, 'bimonthly'); ?>>
+                        <option value="bimonthly" <?php selected(get_option('points_reminder_interval', 'monthly'), 'bimonthly'); ?>>
                             <?php esc_html_e('Bimonthly', 'wp-loyalty'); ?>
                         </option>
-                        <option value="custom" <?php selected($current_interval, 'custom'); ?>>
+                        <option value="custom" <?php selected(get_option('points_reminder_interval', 'monthly'), 'custom'); ?>>
                             <?php esc_html_e('Custom', 'wp-loyalty'); ?>
                         </option>
                     </select>
                 </td>
             </tr>
             <tr class="custom-days"
-                style="display: <?php echo ($current_interval === 'custom') ? 'table-row' : 'none'; ?>;">
+                style="display: <?php echo (get_option('points_reminder_interval', 'monthly') === 'custom') ? 'table-row' : 'none'; ?>;">
                 <th><?php esc_html_e('Custom Days', 'wp-loyalty'); ?></th>
                 <td>
-                    <input type="number" name="custom_days" value="<?php echo esc_attr($custom_days); ?>" min="1"
+                    <input type="number" name="custom_days"
+                           value="<?php echo esc_attr(get_option('points_reminder_custom_days', 30)); ?>" min="1"
                            class="small-text">
                 </td>
             </tr>
@@ -83,11 +62,13 @@
         <button type="submit" class="button button-primary"><?php esc_html_e('Save Settings', 'wp-loyalty'); ?></button>
     </form>
 
+    <!-- User Points Table -->
     <h2><?php esc_html_e('Users', 'wp-loyalty'); ?></h2>
-    <table class="widefat fixed striped">
+    <table>
         <thead>
         <tr>
             <th><?php esc_html_e('User ID', 'wp-loyalty'); ?></th>
+            <th><?php esc_html_e('User Name', 'wp-loyalty'); ?></th>
             <th><?php esc_html_e('Email', 'wp-loyalty'); ?></th>
             <th><?php esc_html_e('Points', 'wp-loyalty'); ?></th>
             <th><?php esc_html_e('Actions', 'wp-loyalty'); ?></th>
@@ -98,6 +79,7 @@
             <?php foreach ($users as $user): ?>
                 <tr>
                     <td><?php echo esc_html($user->id); ?></td>
+                    <td><?php echo esc_html($user->display_name); ?></td>
                     <td><?php echo esc_html($user->user_email); ?></td>
                     <td><?php echo esc_html($user->points); ?></td>
                     <td>
