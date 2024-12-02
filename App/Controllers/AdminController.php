@@ -11,7 +11,7 @@ class AdminController
         $interval = get_option('points_reminder_interval', 'monthly');
         $custom_days = get_option('points_reminder_custom_days', 30);
 
-        // Determine interval time in seconds
+// Determine interval time in seconds
         switch ($interval) {
             case 'monthly':
                 $schedule_time = MONTH_IN_SECONDS;
@@ -26,7 +26,7 @@ class AdminController
                 $schedule_time = MONTH_IN_SECONDS; // Fallback
         }
 
-        // Schedule the action if not already scheduled
+// Schedule the action if not already scheduled
         if (!as_next_scheduled_action('app_send_points_reminder')) {
             as_schedule_recurring_action(time(), $schedule_time, 'app_send_points_reminder');
         }
@@ -34,11 +34,15 @@ class AdminController
 
     public static function clearEmailReminder()
     {
-        $actions = as_get_scheduled_actions(['hook' => 'app_send_points_reminder'], 'ids');
-        foreach ($actions as $action_id) {
-            as_unschedule_action_by_id($action_id);
+        $scheduled_actions = as_get_scheduled_actions([
+            'hook' => 'app_send_points_reminder',
+        ]);
+
+        foreach ($scheduled_actions as $action) {
+            as_unschedule_action('app_send_points_reminder');
         }
     }
+
 
     public static function sendPointsReminderFromScheduler()
     {
