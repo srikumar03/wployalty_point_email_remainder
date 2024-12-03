@@ -13,15 +13,18 @@ class UserPointsModel
 //        $query = "SELECT u.id, u.points, u.user_email, u.earn_total_point, wp.display_name FROM wp_wlr_users u JOIN wp_users wp ON TRIM(LOWER(u.user_email)) = TRIM(LOWER(wp.user_email));";
 //        $query = "SELECT * FROM `{$loyalty_table}`";
         $query = "
-        SELECT 
-            u.id, 
-            u.points, 
-            u.user_email, 
-            u.earn_total_point, 
-            COALESCE(wp.display_name, 'N/A') AS display_name 
-        FROM $loyalty_table u
-        LEFT JOIN $users_table wp 
-        ON TRIM(LOWER(u.user_email)) = TRIM(LOWER(wp.user_email));";
+    SELECT 
+        u.id, 
+        u.points, 
+        u.user_email, 
+        u.earn_total_point, 
+        COALESCE(wp.display_name, 'N/A') AS display_name 
+    FROM $loyalty_table u
+    LEFT JOIN $users_table wp 
+    ON TRIM(LOWER(u.user_email)) = TRIM(LOWER(wp.user_email))
+    WHERE u.is_allow_send_email = 1 
+      AND u.is_banned_user = 0
+";
 
 
         return $wpdb->get_results($query);

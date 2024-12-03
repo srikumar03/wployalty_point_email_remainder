@@ -11,7 +11,7 @@ class AdminPageController
     {
         add_menu_page(
             __('WP Loyalty Users', 'wp-loyalty'),
-            __('Loyalty Users', 'wp-loyalty'),
+            __('WPLoyalty Point Email Remainder', 'wp-loyalty'),
             'manage_options',
             'wp-loyalty-users',
             [self::class, 'renderAdminPage'],

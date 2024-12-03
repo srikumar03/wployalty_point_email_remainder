@@ -10,8 +10,6 @@ class AdminController
     {
         $interval = get_option('points_reminder_interval', 'monthly');
         $custom_days = get_option('points_reminder_custom_days', 30);
-
-// Determine interval time in seconds
         switch ($interval) {
             case 'monthly':
                 $schedule_time = MONTH_IN_SECONDS;
@@ -54,17 +52,13 @@ class AdminController
 
     public static function sendPointsReminder($users)
     {
-        // Get the admin email address from the WordPress options
         $admin_email = get_option('admin_email');
-
-        // Set the "From" email and "From" name using filters
         add_filter('wp_mail_from', function () {
-            return 'noreply@yourdomain.com'; // Set this to a valid email address
+            return 'noreply@yourdomain.com';
         });
         add_filter('wp_mail_from_name', function () {
-            return 'WP Loyalty'; // Set this to your plugin or company name
+            return 'WP Loyalty'; // Set this to plugin or company name
         });
-
         foreach ($users as $user) {
             $email_content = self::generateEmailContent($user);
             $subject = sprintf(esc_html__('Your Points Update - %d Points!', 'wp-loyalty'), $user->points);
@@ -74,7 +68,6 @@ class AdminController
             ];
             wp_mail($user->user_email, $subject, $email_content, $headers);
         }
-//
 //        // Remove the filters after sending the email to avoid affecting other emails
 //        remove_filter('wp_mail_from', function () {
 //            return 'noreply@yourdomain.com';
